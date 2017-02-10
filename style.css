@@ -2,11 +2,14 @@
     padding: 1px;
 }
 body{ 
+    background-image: url("media/background.jpg");
     background-color: #6d6d61; 
     color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h1, h2 {
-	font-family: Calibri, Verdana, Arial, Helvetica, sans-serif;    /* Schriftart */                                           /* Schriftgrösse */
+	font-family: Calibri, Verdana, Arial, Helvetica, sans-serif;    /* Schriftart */   
+    color: #faff00;                                        /* Schriftgrösse */
 }
 h1 {
     font-size: 170%;
@@ -14,6 +17,9 @@ h1 {
 h2 {
     font-family: Calibri;
     font-size: 140%;
+}
+p{
+    color: ghostwhite;
 }
 ul{
     padding: 0;
@@ -43,6 +49,9 @@ li a:hover {
     background-color: #faff00;
     color: black;
 }
+a{
+    color: ghostwhite
+}
 .active {
     background-color: #faff00;
     color: black;
@@ -54,4 +63,7 @@ li a:hover {
 #artikel2{
     font-family: Calibri;
     font-size: 120%;
+}
+#bildBereich{
+    background-color: #606060;
 }
