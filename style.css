@@ -1,0 +1,57 @@
+*{
+    padding: 1px;
+}
+body{ 
+    background-color: #6d6d61; 
+    color: black;
+}
+h1, h2 {
+	font-family: Calibri, Verdana, Arial, Helvetica, sans-serif;    /* Schriftart */                                           /* Schriftgrösse */
+}
+h1 {
+    font-size: 170%;
+}
+h2 {
+    font-family: Calibri;
+    font-size: 140%;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background-color: #3a3c3f;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    width: 100px;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 130%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li a:hover {
+    background-color: #faff00;
+    color: black;
+}
+.active {
+    background-color: #faff00;
+    color: black;
+}
+#artikel1{
+    font-family: Arial;
+    font-size: 120%;
+}
+#artikel2{
+    font-family: Calibri;
+    font-size: 120%;
+}

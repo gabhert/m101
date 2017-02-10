@@ -3,25 +3,41 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Gabriel Herter</title>               
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <title>Website</title>               
     </head>
 
     <body>
-        <nav>
-            <ul>
-                <li>
-                    <a href="media/test.html">testPage</a> 
-                </li>
-                <li>
-                    <a href="https://www.google.ch">Google</a>
-                </li>
-            </ul>
-        </nav>
+        <header>
+            <nav id="navigationsbereich">
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a> 
+                    </li>
+                    <li>
+                        <a href="media/test.html">testPage</a> 
+                    </li>
+                    <li>
+                        <a href="media/video.html">Youtube</a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.ch">Google</a>
+                    </li>
+                    <li>
+                        <a href="media/maps.html" >Maps</a>
+                    </li>
+                    <li style="float:right">
+                         <a href="../about.html" >Über Uns</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
         <section>
             <h1>Section 1</h1>
-            <article itemprop="Inhalt">
+            <article itemprop="Inhalt" id="artikel1">
                 <header>
-                    <h1>Abschnitt 1</h1>
+                    <h2>Abschnitt 1</h2>
                 </header>
                 <aside>
                     <img height="300" width="400" src="media/bild.JPG"/>
@@ -32,14 +48,40 @@
                 <p>Diese Änderung wurde online gemacht.</p>
                 <br>
             </article>
-            <article itemprop="Abschnitt 2">
+            <article itemprop="Abschnitt 2" id="artikel2">
                 <header>
-                    <h1>Abschnitt 2</h1>
+                    <h2>Abschnitt 2</h2>
                 </header>
                 <p>
                     Dies ist ein zweiter Abschnitt
                 </p>
-            </article>
+            </article> 
+        </section>
+
+
+        <section id="section2">
+            <h1>Section 2</h1>
+            <br>
+
+            <button onclick="getLocation()">Klick mich!</button>
+
+            <p id="demo"></p>
+
+            <script>
+            var x = document.getElementById("demo");
+
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                } else { 
+                    x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+            }
+            function showPosition(position) {
+                x.innerHTML = "Breitengrad: " + position.coords.latitude + 
+                "<br>Längengrad: " + position.coords.longitude;
+            }
+            </script>
         </section>
         
        
