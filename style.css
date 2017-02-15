@@ -51,6 +51,12 @@ ul.navig{
     left: 0;
     width: 100%;
 }
+table{
+    border-style: none;
+}
+td>img{
+    width: 200%;
+}
 li{
     float: left;
 }
