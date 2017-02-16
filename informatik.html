@@ -33,9 +33,12 @@
                 </ul>
             </nav>
         </header>
-        <section class="flex-sec">
+
+<!-- Slideshow -->
+
+        <section class="flex-sec-col">
         <div class="slideshow_it" id="slideshow_it">
-        <h2 class="centered">Informatik</h2>
+        <h1 class="centered">Informatik</h1>
 
         <div class="w3-content w3-section">
         <img class="mySlides" src="media/it/it_1.jpg" >
@@ -56,17 +59,86 @@
             myIndex++;
             if (myIndex > x.length) {myIndex = 1}    
             x[myIndex-1].style.display = "block";  
-            setTimeout(carousel, 5000); // Change image every 5 seconds
+            setTimeout(carousel, 3000); // Change image every 3 seconds
         }
         </script>
         </div>
         </section>
-        <section class="flex-sec">
+
+
+
+        <section id="it_intro" class="flex-sec-col">
             <div class="mehrspaltig">
-                <p>
-                    Der JU7090 ist das Gerät der 7er-Serie, welches UHD-Auflösung darstellt und in flacher Bauweise kommt. Gegenüber den 6er-Geräten hat der JU7090 einige Verbesserungen. Das Display ist als Ultra Clear Pro Panel bezeichnet und stellt damit die Evolution zum Ultra Clear Panel dar. Mit der Kombination aus Precision Black (Verbesserung von Schwarzwerten) und Peak Illumination (Verbesserung der hellen Bildstellen) soll das Fernsehbild noch besser dargestellt werden.
-                </p>
+                <p class="quote">
+                    Informatik ist die „Wissenschaft von der systematischen Darstellung, Speicherung, Verarbeitung und Übertragung von Informationen, 
+                    besonders der automatischen Verarbeitung mithilfe von Digitalrechnern“. Historisch hat sich die Informatik einerseits als Formalwissenschaft 
+                    aus der Mathematik entwickelt, andererseits als Ingenieursdisziplin aus dem praktischen Bedarf nach der schnellen und insbesondere automatischen 
+                    Ausführung von Berechnungen.</p>
+                    <p>Wikipedia</p>
+            </div>
+            <div class="flex-sec-row" id="fachrichtungen">
+                <div id="systi" >
+                    <h2 class="row-header">Systemtechniker</h2>
+                    <div>
+                        <p class="quote">
+                            Computer sind heute über Netze miteinander verbunden - sie dienen zum Informationsaustausch und teilen sich Arbeiten. 
+                            Die meisten dieser Netze müssen rund um die Uhr funktionieren. Sie müssen aufgebaut, betrieben, erweitert und überwacht werden. 
+                            Dafür bist du -als Systemtechniker/in- zuständig. 
+                        </p>
+                        <div>
+                            <h3>Aufgaben</h3>
+                            <p>
+                                Als Systemtechniker/in installierst du Hard- und Software, erweiterst Gerätekonfigurationen und schulst Anwenderinnen und Anwender. 
+                                Dabei spielen Sicherheit und Schutz der Informationen immer eine wichtigere Rolle. Du planst, realisierst und administrierst 
+                                ICT-Netzwerke (LAN, WLAN), stellst Arbeitsplätze bereit, indem du Hard- und Sofware installierst und betreibst Internet-Server und 
+                                überwachst diese, damit die Anwenderinnen und Anwender unterbrechungsfrei arbeiten können. Aussderdem bist du verantwortlich für den 
+                                Backup und stellst sicher, dass keine Daten verloren gehen. Du sorgst dafür, dass Informationen geschützt sind und sicher verbreitet werden können. 
+                            </p>
+                            <h3>Facts</h3>
+                            <table class="contenttable" width="100%"><tbody><tr><td style="width: 40%;">Dauer der Lehre</td><td>4 Jahre</td></tr><tr><td>Sekundarstufe</td><td>A/B</td></tr><tr><td>Berufsschule (variiert)&nbsp;</td><td>1-2 Tage/Woche</td></tr><tr><td rowspan="1">Überbetrieblicher Kurs</td><td rowspan="1">35 Tage verteilt auf alle Lehrjahre</td></tr><tr><td rowspan="1">Berufsmaturität BM</td><td rowspan="1">möglich</td></tr><tr><td rowspan="1">Wichtige Fähigkeiten</td><td rowspan="1">Technisches Geschick<br>Kundenfreundlichkeit</td></tr></tbody></table>
+                            <div class="video-area">
+                                <h3>Video</h3>
+                                <iframe width="100%" height="150%" src="https://www.youtube.com/embed/2dRCtVJa2L4?ecver=1" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="appli">
+                    <h2 class="row-header">Applikationsentwickler</h2>
+                    <div>
+                        <div>
+                        <p class="quote">
+                            Applikationen – man spricht auch von Software – sind Programme, die für bestimmte Abläufe eingesetzt werden. 
+                            Sie kommen heute überall zum Einsatz, z.B. bei der Steuerung des Zugverkehrs, beim Zahlungsverkehr in einer Bank, 
+                            im Operationssaal oder bei der Steuerung eines Flugzeugs. 
+                        </p>
+                        </div>
+                        <div>
+                            <h3>Aufgaben</h3>
+                            <p>
+                                Als Applikationsentwickler/in arbeitest du meist im Team mit anderen Fachleuten. Du beurteilst das Problem, 
+                                erarbeitest mögliche Lösungsvorschläge und zeigst deren Vor- und Nachteile auf. Dann gilt es, die optimale Lösung umzusetzen bzw. 
+                                zu programmieren und auf Herz und Nieren zu testen, bevor sie eingeführt wird. Du arbeitest in einem IT-Unternehmen, in einer Bank, 
+                                Versicherung oder in der öffentlichen Verwaltung. Du durchleuchtest Probleme und erstellst Lösungsvorschläge mittels 
+                                Informatikwerkzeugen. Du programmierst Software-Anwendungen, testest diese und passt sie bei Bedarf an. Du schulst Anwenderinnen 
+                                und Anwender, damit sie die neue Software einsetzen können. Du dokumentierst Lösungen und Anpassungen in einem Handbuch.
+                            </p>
+                        </div>
+                        <div>
+                        <h3>Facts</h3>
+                            <table class="contenttable" width="100%"><tbody><tr><td style="width: 40%;">Dauer der Lehre</td><td>4 Jahre</td></tr><tr><td>Sekundarstufe</td><td>A/B</td></tr><tr><td>Berufsschule (variiert)&nbsp;</td><td>1-2 Tage/Woche</td></tr><tr><td rowspan="1">Überbetrieblicher Kurs</td><td rowspan="1">35 Tage verteilt auf alle Lehrjahre</td></tr><tr><td rowspan="1">Berufsmaturität (BM)</td><td rowspan="1">möglich</td></tr><tr><td rowspan="1" style="vertical-align: top;">Wichtige Fähigkeiten</td><td rowspan="1">Abstraktes Denkvermögen<br>Team-/Kommunikationsfähigkeit</td></tr></tbody></table> 
+                        </div>
+                        <div class="video-area">
+                                <h3>Video</h3>
+                                <iframe width="100%" height="150%" src="https://www.youtube.com/embed/lNoJXECarcc?ecver=1" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+    <footer>
+      <a target="_blank" href="https://blj.zbw.ch">Diese Seite wurde im BLJ erstellt</a>
+      <p>&copy 2017 Gabriel Herter </p>
+    </footer>
     </body>
 </html>
