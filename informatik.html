@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="de">
+
+    <head>
+        <meta charset="utf-8">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+        <meta name="theme-color" content="#606060"> 
+        <title>Informatik</title>               
+    </head>
+    <body>
+        <header>
+            <nav id="navigationsbereich" class="navig">
+                <ul class="navig">
+                    <li>
+                        <a href="index.html">Home</a> 
+                    </li>
+                    <li>
+                        <a href="media/test.html">testPage</a> 
+                    </li>
+                    <li>
+                        <a href="lernende.html">Lernende</a>
+                    </li>
+                    <li>
+                        <a href="media/galerie.html">Galerie</a>
+                    </li>
+                    <li>
+                        <a href="media/maps.html" >Maps</a>
+                    </li>
+                    <li style="float:right">
+                        <a href="about.html" >Über Mich</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="flex-sec">
+        <div class="slideshow_it" id="slideshow_it">
+        <h2 class="centered">Informatik</h2>
+
+        <div class="w3-content w3-section">
+        <img class="mySlides" src="media/it/it_1.jpg" >
+        <img class="mySlides" src="media/it/it_2.jpg" >
+        <img class="mySlides" src="media/it/it_3.jpg" >
+        </div>
+
+        <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 5000); // Change image every 5 seconds
+        }
+        </script>
+        </div>
+        </section>
+        <section class="flex-sec">
+            <div class="mehrspaltig">
+                <p>
+                    Der JU7090 ist das Gerät der 7er-Serie, welches UHD-Auflösung darstellt und in flacher Bauweise kommt. Gegenüber den 6er-Geräten hat der JU7090 einige Verbesserungen. Das Display ist als Ultra Clear Pro Panel bezeichnet und stellt damit die Evolution zum Ultra Clear Panel dar. Mit der Kombination aus Precision Black (Verbesserung von Schwarzwerten) und Peak Illumination (Verbesserung der hellen Bildstellen) soll das Fernsehbild noch besser dargestellt werden.
+                </p>
+            </div>
+        </section>
+    </body>
+</html>

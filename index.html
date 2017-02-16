@@ -14,7 +14,7 @@
             <nav id="navigationsbereich" class="navig">
                 <ul class="navig">
                     <li>
-                        <a href="index.html">Home</a> 
+                        <a class="active" href="index.html">Home</a> 
                     </li>
                     <li>
                         <a href="media/test.html">testPage</a> 
@@ -82,36 +82,29 @@
 
 
         <section id="section2">
-            <h1>Section 2</h1>
+            <h1>Newsletter</h1>
             <br>
-
-            <button onclick="getLocation()">Klick mich!</button>
-
-            <p id="demo"></p>
-
-            <script>
-            var x = document.getElementById("demo");
-
-            function getLocation() {
-                if (navigator.geolocation) {
-                    navigator.geolocation.getCurrentPosition(showPosition);
-                } else { 
-                    x.innerHTML = "Geolocation is not supported by this browser.";
-                }
-            }
-            function showPosition(position) {
-                x.innerHTML = "Breitengrad: " + position.coords.latitude + 
-                "<br>Längengrad: " + position.coords.longitude;
-            }
-            </script>
+        <form action="index.html">
+            <fieldset class="newsletter"> 
+                <legend><h2>Für Newsletter anmelden:</h2></legend>
+                <p>Vorname:</p>
+                <input type="text" name="vorname" class="formular">
+                <p>Nachmame:</p>
+                <input type="text" name="nachname" class="formular">
+                <p>Anrede: 
+                <input type="radio" value="herr">Herr
+                <input type="radio" value="frau">Frau
+                <input type="radio" value="else">Sonstiges
+                </p>
+                <input type="submit" value="OK" class="submit">
+            </fieldset>
+        </form>
         </section>
-        
-       
-    </body>
-
     <footer>
-        <a target="_blank" href="https://blj.zbw.ch">Diese Seite wurde im BLJ erstellt </a>
-    </footer>
+        <div><a target="_blank" href="https://blj.zbw.ch">Diese Seite wurde im BLJ erstellt</a></div>
+        <div><p>&copy 2017 Gabriel Herter </p></div>
+    </footer>  
 
+    </body>
 
 </html>
